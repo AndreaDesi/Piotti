@@ -44,5 +44,9 @@ butter.init({
 });
 
 butter.init({
+  cancelOnTouch: true
+});
+
+butter.init({
   wrapperDamper: 0.03
 });
