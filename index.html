@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ita">
+<head>
+  <title>Piotti - Landing Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="img/favicon.png"/>
+  <!-- owl carousel css -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+
+<body>
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">PIOTTI</a>
+
+      <!-- Toggler/Collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#chi-siamo">Chi siamo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cosa-facciamo">Cosa facciamo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#perche">Perché</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#download">Download</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Home -->
+<section class="home d-flex align-items-center" id="home">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <div class="home-text">
+          <h1 class="testo-blu">Benvenuto su Piotti!</h1>
+          <p class="testo-bianco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada ipsum condimentum, congue nisi sit amet, finibus diam. In vestibulum feugiat elit, eu eleifend arcu tincidunt quis.</p>
+          <div class="home-btn">
+            <a href="#download" class="btn btn-1">Scarica l'app</a>
+            <button type="button" class="btn btn-1 video-play-btn">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="home-img center-block">
+          <img src="img/home/intro.png" class="" alt="Piotti intro">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Video Pop-up -->
+  <div class="video-popup">
+    <div class="video-popup-inner">
+      <i class="fas fa-times video-popup-close"></i>
+      <div class="iframe-box">
+        <iframe id="player-1" src="https://www.youtube.com/embed/0nUTGPEaw50" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+<!-- Cosa > Utente -->
+
+<section class="cosa-utente d-flex align-items-center" id="cosa-facciamo">
+  <div class="container">
+    <div class="top-text row d-flex justify-content-center">
+        <section class="section-title">
+          <h2 class="testo-giallo">I vantaggi per l'utente</h1>
+        </section>
+    </div>
+
+    <!-- Card -->
+    <div class="row testo-bianco">
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/home/intro.png" class="card-img-bottom">
+          <div class="card-body">
+            <h3 class="card-title">Lorem Ipsum</h3>
+            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/home/intro.png" class="card-img-bottom">
+          <div class="card-body">
+            <h3 class="card-title">Lorem Ipsum</h3>
+            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/home/intro.png" class="card-img-bottom">
+          <div class="card-body">
+            <h3 class="card-title">Lorem Ipsum</h3>
+            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Cosa > Commerciante -->
+
+<section class="cosa-commerciante d-flex align-items-center">
+  <div class="container">
+
+    <div class="top-text row d-flex justify-content-center">
+        <section class="section-title">
+          <h2 class="testo-blu">I vantaggi per il commerciante</h2>
+        </section>
+    </div>
+
+    <!-- Card -->
+    <div class="row testo-bianco">
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/home/intro.png" class="card-img-bottom">
+          <div class="card-body">
+            <h3 class="card-title">Lorem Ipsum</h3>
+            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/home/intro.png" class="card-img-bottom">
+          <div class="card-body">
+            <h3 class="card-title">Lorem Ipsum</h3>
+            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <img src="img/home/intro.png" class="card-img-bottom">
+          <div class="card-body">
+            <h3 class="card-title">Lorem Ipsum</h3>
+            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Mappa -->
+
+<section class="sezione-mappa d-flex justify-content-center">
+  <div class="container d-flex justify-content-center">
+    <div class="row align-items-center">
+      <div class="col-md-5">
+        <div class="home-text">
+          <h1 class="testo-giallo">Benvenuto su Piotti!</h1>
+          <p class="testo-bianco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada ipsum condimentum, congue nisi sit amet, finibus diam. In vestibulum feugiat elit, eu eleifend arcu tincidunt quis.</p>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div id="map">
+            <script>
+              var map= L.map('map').setView([0,0],1);
+
+              L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=BCZcVMLVMyEMJZcBZ1nX', {
+                attibution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+              }).addTo(map);
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Download -->
+<section class="download d-flex align-items-center" id="download">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <div class="home-text">
+          <h1 class="testo-blu">Scarica l'app sul tuo smartphone</h1>
+          <div class="home-btn">
+            <a href="https://www.youtube.com/watch?v=eaYILn1jKnA" target="_blank" class="btn btn-1 ios"><i class="fab fa-apple"></i> Scarica su App Store</a> <br>
+            <a href="https://www.youtube.com/watch?v=2y9SG0nITN0" target="_blank" class="btn btn-1"><i class="fab fa-google-play"></i> Scarica su PlayStore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <div class="home-img">
+          <img src="img/home/intro.png" alt="Piotti intro">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-lg-start align-items-center">
+  <div class="container p-4">
+    <div class="row align-items-center">
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5>Laboratorio di Sistemi<br>per l'interazione</h5>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5>Docenti</h5>
+        <ul>
+          <li>
+            <p>Roberta Tassi</p>
+          </li>
+          <li>
+            <p>Guido Parlato</p>
+          </li>
+          <li>
+            <p>Maristella Matera</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5>Cultori della Materia</h5>
+
+        <ul>
+          <li>
+            <p>Agata Brilli</p>
+          </li>
+          <li>
+            <p>Riccardo Medana</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5>Team</h5>
+
+        <ul>
+          <li>
+            <p>Irene Casano</p>
+          </li>
+          <li>
+            <p>Andrea De Simone</p>
+          </li>
+          <li>
+            <p>Aurora Manuguerra</p>
+          </li>
+          <li>
+            <p>Viola Moliterni</p>
+          </li>
+          <li>
+            <p>Agnese Viola</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- jquery js -->
+<script src="js/jquery.min.js"></script>
+<!-- popper js -->
+<script src="js/popper.min.js"></script>
+<!-- bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- owl carousel js -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- ScrollIt js -->
+<script src="js/scrollIt.min.js"></script>
+<!-- main js -->
+<script src="js/main.js"></script>
+</body>
+</html>

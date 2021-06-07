@@ -1,0 +1,381 @@
+/*--------
+Font
+----------*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+@font-face {
+  font-family: 'Rotonto';
+  src: url('../webfonts/RotontoTrial-Bold.woff');
+}
+
+/*--------
+Global
+----------*/
+:root {
+  --blu: #3036F5;
+  --giallo: #FFBD12;
+  --nero: #000000;
+  --bianco: #FFFFFF;
+  --rosso: #FF8764;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1em;
+  font-optical-sizing: auto;
+  background-color: var(--bianco);
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+img{
+  max-width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease-out;
+
+}
+
+img:hover {
+  transform: rotate(5deg);
+  transition: all 0.3s ease-out;
+}
+
+ul{
+  list-style: none;
+}
+
+.testo-blu {
+  color: var(--blu);
+}
+
+.testo-giallo {
+  color: var(--giallo);
+}
+
+.testo-bianco {
+  color: var(--bianco);
+}
+
+::selection {
+  color: var(--rosso);
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--rosso);
+}
+
+.btn-1 {
+  background-color: var(--blu);
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  color: var(--bianco);
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.16px;
+  border: 2px solid transparent;
+}
+
+.btn-1:hover {
+  background-color: var(--giallo);
+  color: var(--blu);
+  border: 2px solid var(--blu);
+}
+
+button:focus {
+  outline: none !important;
+}
+
+/*--------
+Navbar
+----------*/
+.navbar{
+  background-color: var(--blu);
+  padding: 0;
+  z-index: 100;
+}
+
+.navbar > .container {
+  padding: 10px 0px;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  font-family: 'Rotonto';
+  color: var(--bianco);
+  transition: all 0.3s ease-out;
+
+}
+
+.navbar-brand:hover {
+    transform: rotate(5deg);
+    transition: all 0.3s ease-out;
+    color: var(--bianco) !important;
+}
+
+.navbar .nav-item {
+  margin-left: 40px;
+}
+
+.navbar .nav-item .nav-link {
+  font-size: 1.1em;
+  color: var(--bianco);
+  padding: 2px 0;
+  position: relative;
+  transition: all 0.3s ease-out;
+
+}
+
+/*--------Animazione navbar----------*/
+.navbar .nav-item .nav-link:hover {
+  transform: rotate(-5deg);
+  transition: all 0.3s ease-out;
+}
+
+
+/*--------
+Home
+----------*/
+.home {
+  min-height: 100vh;
+  padding: 100px 0;
+  background-color: var(--giallo);
+  overflow-x: hidden;
+}
+
+.home-text h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0 0 30px;
+}
+
+.home-text p {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.home .btn-1 {
+  margin-top: 40px;
+}
+
+.home .home-btn .video-play-btn {
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+}
+
+.home .home-btn .video-play-btn i{
+  line-height: 47px;
+}
+
+.home-img {
+  max-width: fit-content;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/*--------
+Video Pop-up
+----------*/
+.video-popup {
+  padding: 30px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+  }
+
+.video-popup.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.video-popup-inner {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+}
+
+.video-popup .video-popup-close {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  height: 30px;
+  width: 30px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  color: var(--bianco);
+}
+
+.video-popup .iframe-box {
+  height: 0;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.video-popup #player-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/*--------
+Cosa>utente
+----------*/
+.cosa-utente {
+  min-height: 100vh;
+  background-color: var(--blu);
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0);
+  border: none !important;
+  max-width: 500px;
+  text-align: center;
+  margin: 5%;
+}
+
+.top-text {
+  margin-bottom: 10%;
+}
+
+.section-title h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+/*--------
+Cosa>commerciante
+----------*/
+.cosa-commerciante {
+  min-height: 100vh;
+  background-color: var(--giallo);
+}
+
+/*--------
+Mappa
+----------*/
+
+.sezione-mappa {
+  min-height: 100vh;
+  background-color: var(--blu);
+}
+
+#map {
+  max-width: inherit;
+  max-width: 700px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.google-map {
+  height: 60vh;
+  width: 100%;
+}
+
+.i4ewOd-pzNkMb-haAclf {
+    visibility: hidden !important;
+}
+
+/*--------
+Download
+----------*/
+.download {
+  min-height: 100vh;
+  background-color: var(--giallo);
+}
+
+.ios {
+  margin-bottom: 2%;
+}
+
+
+/*--------
+Footer
+----------*/
+footer {
+  background-color: var(--blu);
+  color: var(--bianco);
+}
+
+footer h5 {
+font-weight: 700;
+}
+
+footer p {
+font-weight: 300;
+}
+
+
+
+/*--------
+Responsive
+----------*/
+
+@media(max-width: 991px) {
+  .navbar-toggler {
+    color: var(--bianco);
+    height: 34px;
+    width: 44px;
+    padding: 0;
+    font-size: 25px;
+  }
+  .navbar-nav {
+    background-color: var(--blu);
+  }
+  .navbar .nav-item {
+    margin: 0;
+    padding: 5px 15px;
+  }
+  .navbar .navbar-shrink .navbar-nav {
+    background-color: var(--blu)
+  }
+
+  .navbar .nav-item .nav-link:hover {
+    transform: none;
+  }
+  .home-text h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media(max-width: 767px) {
+  .home-text {
+    margin-bottom: 80px;
+  }
+}
+
+@media(max-width: 576px) {
+  .navbar > .container {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
