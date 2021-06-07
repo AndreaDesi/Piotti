@@ -91,6 +91,11 @@ button:focus {
   outline: none !important;
 }
 
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 0%) !important;
+}
+
 /*--------
 Navbar
 ----------*/
@@ -177,7 +182,7 @@ Home
 
 .home-img {
   max-width: fit-content;
-  width: 100%;
+  width: 80%;
   position: relative;
   margin: auto;
 }
@@ -365,11 +370,23 @@ Responsive
   .home-text h1 {
     font-size: 2.5em;
   }
+  .home-img {
+    max-width: fit-content;
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
 }
 
 @media(max-width: 767px) {
   .home-text {
     margin-bottom: 80px;
+  }
+  .home-img {
+    max-width: fit-content;
+    width: 80%;
+    position: relative;
+    margin: auto;
   }
 }
 
