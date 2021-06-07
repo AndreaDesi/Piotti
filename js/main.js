@@ -15,20 +15,34 @@ $(document).ready(function() {
   });
 });
 
-/*-------- navbar ----------*/
+/*-------- navbar collapse ----------*/
 $(".nav-link").on("click", function() {
   $(".navbar-collapse").collapse("hide")
 })
 
 
-  /*--------  Smooth scroll  ----------*/
-   $(".navbar-collapse ul li a[href^='#']").on('click', function(e) {
-    target = this.hash;
-    e.preventDefault();
+/*--------  Smooth scroll  ----------*/
+ $(".navbar-collapse ul li a[href^='#']").on('click', function(e) {
+  target = this.hash;
+  e.preventDefault();
 
-    $('html,body').animate({
-      scrollTop: $(this.hash).offset().top
+  $('html,body').animate({
+    scrollTop: $(this.hash).offset().top
     }, 600, function (){
-      window.location.hash = target;
-    });
+    window.location.hash = target;
   });
+});
+
+/*--------  aos  ----------*/
+AOS.init({
+  duration: 1200,
+})
+
+/*--------  butter.js  ----------*/
+butter.init({
+  wrapperId: 'butter'
+});
+
+butter.init({
+  wrapperDamper: 0.03
+});

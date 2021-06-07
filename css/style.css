@@ -23,7 +23,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-size: 1em;
   font-optical-sizing: auto;
-  background-color: var(--bianco);
+  background-color: var(--blu);
   overflow-x: hidden;
 }
 
@@ -292,22 +292,16 @@ Mappa
   background-color: var(--blu);
 }
 
-#map {
-  max-width: inherit;
-  max-width: 700px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.google-map {
-  height: 60vh;
-  width: 100%;
+.map-box {
+  margin: auto;
 }
 
-.i4ewOd-pzNkMb-haAclf {
-    visibility: hidden !important;
+#map {
+  position: inherit;
+  width: auto;
+  height: 600px;
+  z-index: 1;
+  border-radius: 20px;
 }
 
 /*--------
@@ -368,7 +362,7 @@ Responsive
     transform: none;
   }
   .home-text h1 {
-    font-size: 2.5em;
+    font-size: 40px;
   }
   .home-img {
     max-width: fit-content;
@@ -379,7 +373,7 @@ Responsive
 }
 
 @media(max-width: 767px) {
-  .home-text {
+  .home-text h1 {
     margin-bottom: 80px;
   }
   .home-img {
@@ -387,12 +381,20 @@ Responsive
     width: 80%;
     position: relative;
     margin: auto;
+    padding: 8%;
   }
+
 }
 
 @media(max-width: 576px) {
   .navbar > .container {
     margin-left: 4%;
     margin-right: 4%;
+  }
+  .home-text h1 {
+    font-size: 30px;
+  }
+  .home-text p {
+    font-size: 16px;
   }
 }
