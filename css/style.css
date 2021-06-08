@@ -462,6 +462,9 @@ Responsive
     max-width: 100% !important;
     min-width: 100% !important;
   }
+  #butter {
+    overflow-x: hidden !important;
+  }
   .navbar > .container {
     margin-left: 4%;
     margin-right: 4%;

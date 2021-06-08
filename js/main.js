@@ -62,9 +62,3 @@ butter.init({
   wrapperDamper: 0.03,
   cancelOnTouch: true
 });
-
-
-/*--------  fix mobile  ----------*/
-if ($(window).width() <= 575) {
-  butter.init().destroy();
-}
