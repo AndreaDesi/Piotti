@@ -1,15 +1,14 @@
 $(document).ready(function() {
   /*--------  Video Pop-up  ----------*/
   const videoSrc = $("#player-1").attr("src");
-  $(".video-play-btn, .video-popup").on("click", function(){
-    if($(".video-popup").hasClass("open")){
+  $(".video-play-btn, .video-popup").on("click", function() {
+    if ($(".video-popup").hasClass("open")) {
       $(".video-popup").removeClass("open");
-      $("#player-1").attr("src","");
-    }
-    else{
+      $("#player-1").attr("src", "");
+    } else {
       $(".video-popup").addClass("open");
-      if($("#player-1").attr("src")==''){
-        $("#player-1").attr("src",videoSrc);
+      if ($("#player-1").attr("src") == '') {
+        $("#player-1").attr("src", videoSrc);
       }
     }
   });
@@ -21,32 +20,32 @@ $(".nav-link").on("click", function() {
 })
 
 /*-------- screenshot carousel ----------*/
-$('.screenshot-carousel').owlCarousel ({
+$('.screenshot-carousel').owlCarousel({
   loop: true,
-  margin:0,
-  autoplay:true,
-  responsiveClass:true,
+  margin: 0,
+  autoplay: true,
+  responsiveClass: true,
   responsive: {
-    0:{
-      items:1,
+    0: {
+      items: 1,
     },
-    600:{
-      items:2,
+    600: {
+      items: 2,
     },
-    1000:{
-      items:4,
+    1000: {
+      items: 4,
     }
   }
 })
 
 /*--------  Smooth scroll  ----------*/
- $(".navbar-collapse ul li a[href^='#']").on('click', function(e) {
+$(".navbar-collapse ul li a[href^='#']").on('click', function(e) {
   target = this.hash;
   e.preventDefault();
 
   $('html,body').animate({
     scrollTop: $(this.hash).offset().top
-    }, 600, function (){
+  }, 600, function() {
     window.location.hash = target;
   });
 });

@@ -26,6 +26,7 @@ body {
   overflow-x: hidden !important;
   max-width: 100% !important;
   min-width: 100% !important;
+  overscroll-behavior: contain;
 }
 
 * {
@@ -34,11 +35,10 @@ body {
   outline: none;
 }
 
-img{
+img {
   max-width: 100%;
   vertical-align: middle;
   transition: all 0.3s ease-out;
-
 }
 
 img:hover {
@@ -46,7 +46,7 @@ img:hover {
   transition: all 0.3s ease-out;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -66,7 +66,8 @@ ul{
   color: var(--rosso);
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: var(--rosso);
 }
 
@@ -98,17 +99,16 @@ button:focus {
   box-shadow: 0 0 0 0 rgb(0 0 0 / 0%) !important;
 }
 
-
 /*--------
 Navbar
 ----------*/
-.navbar{
+.navbar {
   background-color: var(--blu);
   padding: 0;
   z-index: 100;
 }
 
-.navbar > .container {
+.navbar>.container {
   padding: 10px 0px;
 }
 
@@ -117,13 +117,12 @@ Navbar
   font-family: 'Rotonto';
   color: var(--bianco);
   transition: all 0.3s ease-out;
-
 }
 
 .navbar-brand:hover {
-    transform: rotate(5deg);
-    transition: all 0.3s ease-out;
-    color: var(--bianco) !important;
+  transform: rotate(5deg);
+  transition: all 0.3s ease-out;
+  color: var(--bianco) !important;
 }
 
 .navbar .nav-item {
@@ -136,7 +135,6 @@ Navbar
   padding: 2px 0;
   position: relative;
   transition: all 0.3s ease-out;
-
 }
 
 /*--------Animazione navbar----------*/
@@ -145,6 +143,9 @@ Navbar
   transition: all 0.3s ease-out;
 }
 
+#butter {
+  overflow-x: clip;
+}
 /*--------
 Home
 ----------*/
@@ -179,18 +180,16 @@ Home
   padding: 0;
 }
 
-.home .home-btn .video-play-btn i{
+.home .home-btn .video-play-btn i {
   line-height: 47px;
 }
 
-.home-img img{
+.home-img img {
   max-width: fit-content;
   width: 100%;
   position: relative;
   padding: 8%;
 }
-
-
 
 /*--------
 Video Pop-up
@@ -210,12 +209,12 @@ Video Pop-up
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-out;
-  }
+}
 
 .video-popup.open {
-    opacity: 1;
-    visibility: visible;
-  }
+  opacity: 1;
+  visibility: visible;
+}
 
 .video-popup-inner {
   width: 100%;
@@ -251,7 +250,6 @@ Video Pop-up
   border: 0;
 }
 
-
 /*--------
 Chi siamo
 ----------*/
@@ -275,7 +273,7 @@ Chi siamo
   margin: 0;
 }
 
-.home-img img{
+.home-img img {
   max-width: fit-content;
   width: 100%;
   position: relative;
@@ -310,7 +308,7 @@ Cosa>utente
 }
 
 .come-utente {
-    min-height: 90vh;
+  min-height: 90vh;
 }
 
 .card {
@@ -329,7 +327,7 @@ Cosa>utente
   font-size: 20px;
 }
 
-.section-title h1{
+.section-title h1 {
   text-align: center;
   font-weight: 700;
   font-size: 45px;
@@ -343,10 +341,10 @@ Cosa>screenshot
 }
 
 .screeshot-item {
-margin: 15px;
+  margin: 15px;
 }
 
-.screeshot-item img{
+.screeshot-item img {
   width: 100%;
   display: block;
   margin: auto;
@@ -360,13 +358,12 @@ Download
   padding: 100px 0;
   background-color: var(--giallo);
   overflow-x: hidden;
-  }
+}
 }
 
 .ios {
   margin-bottom: 2%;
 }
-
 
 /*--------
 Footer
@@ -377,28 +374,27 @@ footer {
 }
 
 footer h5 {
-font-weight: 700;
+  font-weight: 700;
 }
 
 footer p {
-font-weight: 300;
+  font-weight: 300;
 }
 
 .p-4 {
-    padding: 2.5rem!important;
+  padding: 2.5rem !important;
 }
-
 
 /*--------
 Responsive
 ----------*/
-
 @media(max-width: 991px) {
   body {
     overflow-x: hidden;
     max-width: 100% !important;
     min-width: 100% !important;
   }
+
   .navbar-toggler {
     color: var(--bianco);
     height: 34px;
@@ -406,13 +402,16 @@ Responsive
     padding: 0;
     font-size: 25px;
   }
+
   .navbar-nav {
     background-color: var(--blu);
   }
+
   .navbar .nav-item {
     margin: 0;
     padding: 5px 15px;
   }
+
   .navbar .navbar-shrink .navbar-nav {
     background-color: var(--blu)
   }
@@ -420,15 +419,18 @@ Responsive
   .navbar .nav-item .nav-link:hover {
     transform: none;
   }
+
   .home-text h1 {
     font-size: 40px;
   }
-  .home-img img{
+
+  .home-img img {
     max-width: fit-content;
     width: 100%;
     position: relative;
     padding: 0%;
   }
+
   .section-title h1 {
     font-size: 40px;
   }
@@ -440,17 +442,20 @@ Responsive
     max-width: 100% !important;
     min-width: 100% !important;
   }
+
   .home-text {
     margin-bottom: 80px;
     margin-top: 70px;
   }
-  .home-img img{
+
+  .home-img img {
     max-width: fit-content;
     width: 100%;
     position: relative;
     margin: auto;
     padding: 8%;
   }
+
   .section-title {
     margin-top: 70px;
   }
@@ -462,29 +467,32 @@ Responsive
     max-width: 100% !important;
     min-width: 100% !important;
   }
-  #butter {
-    overflow-x: hidden !important;
-  }
-  .navbar > .container {
+
+  .navbar>.container {
     margin-left: 4%;
     margin-right: 4%;
   }
-  .home-text h1{
+
+  .home-text h1 {
     font-size: 35px;
   }
-  .home-text p{
+
+  .home-text p {
     font-size: 16px;
   }
-  .home-img img{
+
+  .home-img img {
     max-width: fit-content;
     width: 100%;
     position: relative;
     margin: auto;
     padding: 8%;
   }
+
   .section-title h1 {
     font-size: 35px;
   }
+
   .card {
     margin: 15%;
   }
