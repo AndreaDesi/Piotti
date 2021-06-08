@@ -62,9 +62,11 @@ butter.init({
 });
 
 butter.init({
-  cancelOnTouch: true
-});
-
-butter.init({
   wrapperDamper: 0.03
 });
+
+/*-------- disattivato
+butter.init({
+  cancelOnTouch: true
+});
+----------*/

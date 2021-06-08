@@ -23,7 +23,9 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-size: 1em;
   font-optical-sizing: auto;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
 }
 
 * {
@@ -142,6 +144,10 @@ Navbar
   transform: rotate(-5deg);
   transition: all 0.3s ease-out;
 }
+
+/*--------
+Home
+----------*/
 
 
 /*--------
@@ -325,7 +331,7 @@ Cosa>utente
 }
 
 .card-text {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .section-title h1{
@@ -337,6 +343,10 @@ Cosa>utente
 /*--------
 Cosa>screenshot
 ----------*/
+.sezione-screenshot {
+  min-height: 80vh;
+}
+
 .screeshot-item {
 margin: 15px;
 }
@@ -389,6 +399,11 @@ Responsive
 ----------*/
 
 @media(max-width: 991px) {
+  body {
+    overflow-x: hidden;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
   .navbar-toggler {
     color: var(--bianco);
     height: 34px;
@@ -425,6 +440,11 @@ Responsive
 }
 
 @media(max-width: 767px) {
+  body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
   .home-text {
     margin-bottom: 80px;
     margin-top: 70px;
@@ -442,6 +462,11 @@ Responsive
 }
 
 @media(max-width: 575px) {
+  body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
   .navbar > .container {
     margin-left: 4%;
     margin-right: 4%;
