@@ -60,6 +60,7 @@ AOS.init({
 butter.init({
   wrapperId: 'butter',
   wrapperDamper: 0.03,
+  cancelOnTouch: true
 });
 
 
