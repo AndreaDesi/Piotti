@@ -135,12 +135,24 @@
             <div class="col-md-7 map-box">
               <div id="map" data-aos="fade-up"></div>
               <script>
-                var map = L.map('map').setView([45.464488, 9.183699], 13);
+                var map = L.map('map', {
+                  scrollWheelZoom: false
+                }).setView([45.464488, 9.183699], 13);
                 mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
                 L.tileLayer('https://api.mapbox.com/styles/v1/pinodelsole/ckpmw9lrl0dix17pjsxc2gyjx/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicGlub2RlbHNvbGUiLCJhIjoiY2twbW5yYm5uMDdteTJ2bndwOGR3cHVsdCJ9.KtGzPYIYmpXcSxdxrnSzFg', {
                   attribution: 'Map data &copy; ' + mapLink,
                   maxZoom: 24,
                 }).addTo(map);
+                map.once('focus', function() {
+                  map.scrollWheelZoom.enable();
+                });
+                map.on('click', function() {
+                  if (map.scrollWheelZoom.enabled()) {
+                    map.scrollWheelZoom.disable();
+                  } else {
+                    map.scrollWheelZoom.enable();
+                  }
+                });
               </script>
             </div>
           </div>
@@ -157,7 +169,7 @@
         <div class="come-utente row align-items-center justify-content-center">
           <!-- Testo Utente -->
           <div class="top-text">
-            <div class="section-title" data-aos="fade-up">
+            <div class="section-title container" data-aos="fade-up">
               <h1 class="testo-blu">Cosa fa Piotti per la tua spesa</h1>
             </div>
           </div>
@@ -166,27 +178,27 @@
           <div class="row testo-bianco">
 
             <div class="col-sm-6 col-md-4">
-              <div class="card" data-aos="fade-up">
-                <img src="img/home/intro.png" class="card-img-bottom">
-                <div class="card-body">
+              <div class="card">
+                <img src="img/home/intro.png" class="card-img-bottom" data-aos="fade-up">
+                <div class="card-body" data-aos="fade-up">
                   <p class="card-text">Ti permette di scoprire negozi e botteghe nella tua zona e di restare in contatto con i tuoi negozianti di fiducia.</p>
                 </div>
               </div>
             </div>
 
             <div class="col-sm-6 col-md-4">
-              <div class="card" data-aos="fade-up">
-                <img src="img/come-funziona/mano.png" class="card-img-bottom">
-                <div class="card-body">
+              <div class="card">
+                <img src="img/come-funziona/mano.png" class="card-img-bottom" data-aos="fade-up">
+                <div class="card-body" data-aos="fade-up">
                   <p class="card-text">Propone consigli e offerte personalizzate per guidarti in un’esperienza di acquisto che rispecchia i tuoi gusti e i tuoi valori.</p>
                 </div>
               </div>
             </div>
 
             <div class="col-sm-6 col-md-4">
-              <div class="card" data-aos="fade-up">
-                <img src="img/come-funziona/orologio.png" class="card-img-bottom">
-                <div class="card-body">
+              <div class="card">
+                <img src="img/come-funziona/orologio.png" class="card-img-bottom" data-aos="fade-up">
+                <div class="card-body" data-aos="fade-up">
                   <p class="card-text">Offre un sistema di prenotazione rapido e intuitivo per organizzare i tuoi acquisti e aiutarti a risparmiare tempo.</p>
                 </div>
               </div>
@@ -200,7 +212,7 @@
         <div class="come-utente row align-items-center justify-content-center">
           <!-- Testo Commerciante -->
           <div class="top-text">
-            <div class="section-title" data-aos="fade-up">
+            <div class="section-title container" data-aos="fade-up">
               <h1 class="testo-blu">Come aiuta la tua attività commerciale</h1>
             </div>
           </div>
@@ -209,27 +221,27 @@
           <div class="row testo-bianco">
 
             <div class="col-sm-6 col-md-4">
-              <div class="card" data-aos="fade-up">
-                <img src="img/home/intro.png" class="card-img-bottom">
-                <div class="card-body">
+              <div class="card">
+                <img src="img/home/intro.png" class="card-img-bottom" data-aos="fade-up">
+                <div class="card-body" data-aos="fade-up">
                   <p class="card-text">Dà visibilità alla tua bottega, aprendo le porte a una community appassionata e in cerca di nuovi spunti.</p>
                 </div>
               </div>
             </div>
 
             <div class="col-sm-6 col-md-4">
-              <div class="card" data-aos="fade-up">
-                <img src="img/home/intro.png" class="card-img-bottom">
-                <div class="card-body">
+              <div class="card">
+                <img src="img/home/intro.png" class="card-img-bottom" data-aos="fade-up">
+                <div class="card-body" data-aos="fade-up">
                   <p class="card-text">Consente di organizzare più agevolmente il tuo inventario e le tue vendite e di tenere traccia dell’andamento del tuo esercizio.</p>
                 </div>
               </div>
             </div>
 
             <div class="col-sm-6 col-md-4">
-              <div class="card" data-aos="fade-up">
-                <img src="img/come-funziona/megafono.png" class="card-img-bottom">
-                <div class="card-body">
+              <div class="card">
+                <img src="img/come-funziona/megafono.png" class="card-img-bottom" data-aos="fade-up">
+                <div class="card-body" data-aos="fade-up">
                   <p class="card-text">Ti aiuta a restare in contatto con i clienti anche dopo l’acquisto e di coltivare il rapporto di fiducia attraverso offerte mirate e aggiornamenti in tempo reale.</p>
                 </div>
               </div>
@@ -243,7 +255,7 @@
           <div class="container">
             <!-- Testo Screenshot -->
             <div class="top-text">
-              <div class="section-title" data-aos="fade-up">
+              <div class="section-title container" data-aos="fade-up">
                 <h1 class="testo-blu">E altre funzioni (screenshot dell'app)</h1>
               </div>
             </div>

@@ -143,9 +143,13 @@ Navbar
   transition: all 0.3s ease-out;
 }
 
+/*--------
+Butter fix
+----------*/
 #butter {
   overflow-x: clip;
 }
+
 /*--------
 Home
 ----------*/
@@ -495,5 +499,9 @@ Responsive
 
   .card {
     margin: 15%;
+  }
+
+  .screeshot-item {
+    padding: 15%;
   }
 }
