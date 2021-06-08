@@ -60,36 +60,10 @@ AOS.init({
 butter.init({
   wrapperId: 'butter',
   wrapperDamper: 0.03,
-  cancelOnTouch: true
 });
 
 
 /*--------  fix mobile  ----------*/
-var isMobile = {
-           Android: function () {
-               return navigator.userAgent.match(/Android/i);
-           },
-           BlackBerry: function () {
-               return navigator.userAgent.match(/BlackBerry/i);
-           },
-           iOS: function () {
-               return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-           },
-           Opera: function () {
-               return navigator.userAgent.match(/Opera Mini/i);
-           },
-           Windows: function () {
-               return navigator.userAgent.match(/IEMobile/i);
-           },
-           any: function () {
-               return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-           }
-       };
-
-       if (isMobile.any()) {
-
-       }
-       else {
-
-            butter.init();
-       }
+if ($(window).width() <= 575) {
+  butter.init().destroy();
+}
