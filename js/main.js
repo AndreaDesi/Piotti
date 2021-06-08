@@ -20,6 +20,24 @@ $(".nav-link").on("click", function() {
   $(".navbar-collapse").collapse("hide")
 })
 
+/*-------- screenshot carousel ----------*/
+$('.screenshot-carousel').owlCarousel ({
+  loop: true,
+  margin:0,
+  autoplay:true,
+  responsiveClass:true,
+  responsive: {
+    0:{
+      items:1,
+    },
+    600:{
+      items:2,
+    },
+    1000:{
+      items:4,
+    }
+  }
+})
 
 /*--------  Smooth scroll  ----------*/
  $(".navbar-collapse ul li a[href^='#']").on('click', function(e) {

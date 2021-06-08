@@ -23,7 +23,6 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-size: 1em;
   font-optical-sizing: auto;
-  background-color: var(--blu);
   overflow-x: hidden;
 }
 
@@ -79,6 +78,7 @@ ul{
   font-weight: 700;
   letter-spacing: 0.16px;
   border: 2px solid transparent;
+  margin-top: 2%;
 }
 
 .btn-1:hover {
@@ -95,6 +95,7 @@ button:focus {
   outline: 0;
   box-shadow: 0 0 0 0 rgb(0 0 0 / 0%) !important;
 }
+
 
 /*--------
 Navbar
@@ -185,7 +186,7 @@ Home
   max-width: fit-content;
   width: 100%;
   position: relative;
-  margin: auto;
+  padding: 8%;
 }
 
 
@@ -251,46 +252,40 @@ Video Pop-up
 
 
 /*--------
-Cosa>utente
+Chi siamo
 ----------*/
-.cosa-utente {
-  min-height: 100vh;
+#chi-siamo {
+  min-height: 60vh;
+  padding: 100px 0;
   background-color: var(--blu);
+  overflow-x: hidden;
 }
 
-.card {
-  background-color: rgba(0, 0, 0, 0);
-  border: none !important;
-  max-width: 500px;
-  text-align: center;
-  margin: 5%;
-}
-
-.top-text {
-  margin-bottom: 10%;
-}
-
-.section-title h1{
-  text-align: center;
-  font-weight: 700;
+.home-text h1 {
   font-size: 45px;
+  font-weight: 700;
+  margin: 0 0 30px;
+}
+
+.home-text p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.home-img img{
+  max-width: fit-content;
+  width: 100%;
+  position: relative;
+  padding: 8%;
 }
 
 /*--------
-Cosa>commerciante
+Chi siamo>Mappa
 ----------*/
-.cosa-commerciante {
-  min-height: 100vh;
-  background-color: var(--giallo);
-}
-
-/*--------
-Mappa
-----------*/
-
 .sezione-mappa {
-  min-height: 100vh;
-  background-color: var(--blu);
+  min-height: 80vh;
 }
 
 .map-box {
@@ -308,11 +303,52 @@ Mappa
 }
 
 /*--------
+Cosa>utente
+----------*/
+#come-funziona {
+  background-color: var(--giallo);
+}
+
+.come-utente {
+    min-height: 80vh;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0);
+  border: none !important;
+  max-width: 500px;
+  text-align: center;
+  margin: 5%;
+}
+
+.section-title h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+/*--------
+Cosa>screenshot
+----------*/
+.screeshot-item {
+margin: 15px;
+}
+
+.screeshot-item img{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/*--------
 Download
 ----------*/
-.download {
+#download {
   min-height: 100vh;
+  padding: 100px 0;
   background-color: var(--giallo);
+  overflow-x: hidden;
+  }
 }
 
 .ios {
@@ -336,6 +372,9 @@ footer p {
 font-weight: 300;
 }
 
+.p-4 {
+    padding: 2.5rem!important;
+}
 
 
 /*--------
@@ -367,11 +406,11 @@ Responsive
   .home-text h1 {
     font-size: 40px;
   }
-  .home-img {
+  .home-img img{
     max-width: fit-content;
     width: 100%;
     position: relative;
-    margin: auto;
+    padding: 0%;
   }
   .section-title h1 {
     font-size: 40px;
@@ -383,11 +422,12 @@ Responsive
     margin-bottom: 80px;
     margin-top: 70px;
   }
-  .home-img {
+  .home-img img{
     max-width: fit-content;
     width: 100%;
     position: relative;
-    margin: 8%;
+    margin: auto;
+    padding: 8%;
   }
   .section-title {
     margin-top: 70px;
@@ -400,12 +440,12 @@ Responsive
     margin-right: 4%;
   }
   .home-text h1{
-    font-size: 40px;
+    font-size: 35px;
   }
   .home-text p{
     font-size: 16px;
   }
-  .home-img {
+  .home-img img{
     max-width: fit-content;
     width: 100%;
     position: relative;
@@ -413,7 +453,7 @@ Responsive
     padding: 8%;
   }
   .section-title h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
   .card {
     margin: 15%;

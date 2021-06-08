@@ -96,129 +96,180 @@
     </div>
   </section>
 
-  <!-- Cosa > Utente -->
-  <section class="cosa-utente d-flex align-items-center" id="come-funziona">
+  <!-- Chi siamo -->
+  <section class="d-flex align-items-center" id="chi-siamo">
     <div class="container">
 
-      <div class="top-text row d-flex justify-content-center">
-        <div class="section-title" data-aos="fade-up">
-          <h1 class="testo-giallo">I vantaggi per l'utente</h1>
-        </div>
-      </div>
-
-    <!-- Card -->
-    <div class="row testo-bianco">
-
-      <div class="col-sm-6 col-md-4">
-        <div class="card" data-aos="fade-up">
-          <img src="img/home/intro.png" class="card-img-bottom">
-          <div class="card-body">
-            <h3 class="card-title">Lorem Ipsum</h3>
-            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="card" data-aos="fade-up">
-          <img src="img/home/intro.png" class="card-img-bottom">
-          <div class="card-body">
-            <h3 class="card-title">Lorem Ipsum</h3>
-            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="card" data-aos="fade-up">
-          <img src="img/home/intro.png" class="card-img-bottom">
-          <div class="card-body">
-            <h3 class="card-title">Lorem Ipsum</h3>
-            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    </div>
-  </section>
-
-  <!-- Cosa > Commerciante -->
-  <section class="cosa-commerciante d-flex align-items-center">
-    <div class="container">
-
-      <div class="top-text row d-flex justify-content-center">
-        <div class="section-title" data-aos="fade-up">
-          <h1 class="testo-blu">I vantaggi per l'utente</h1>
-        </div>
-      </div>
-
-    <!-- Card -->
-    <div class="row testo-bianco">
-
-      <div class="col-sm-6 col-md-4">
-        <div class="card" data-aos="fade-up">
-          <img src="img/home/intro.png" class="card-img-bottom">
-          <div class="card-body">
-            <h3 class="card-title">Lorem Ipsum</h3>
-            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="card" data-aos="fade-up">
-          <img src="img/home/intro.png" class="card-img-bottom">
-          <div class="card-body">
-            <h3 class="card-title">Lorem Ipsum</h3>
-            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="card" data-aos="fade-up">
-          <img src="img/home/intro.png" class="card-img-bottom">
-          <div class="card-body">
-            <h3 class="card-title">Lorem Ipsum</h3>
-            <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    </div>
-  </section>
-
-  <!-- Sezione Mappa -->
-  <section class="sezione-mappa d-flex justify-content-center">
-    <div class="container d-flex justify-content-center">
-      <div class="row align-items-center">
-        <!-- Testo-->
+      <div class="row flex-column-reverse flex-md-row align-items-center">
+        <!-- Immagine -->
         <div class="col-md-5">
-          <div class="home-text" data-aos="fade-up">
-            <h1 class="testo-giallo">Benvenuto su Piotti!</h1>
-            <p class="testo-bianco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada ipsum condimentum, congue nisi sit amet, finibus diam. In vestibulum feugiat elit, eu eleifend arcu tincidunt quis.</p>
+          <div class="home-img center-block" data-aos="fade-up">
+            <img src="img/home/intro.png" class="" alt="Piotti intro">
+          </div>
+        </div>
+
+        <!-- Testo -->
+        <div class="col-md-7">
+          <div class="home-text">
+            <h1 class="testo-giallo" data-aos="fade-up">Lorem ipsum</h1>
+            <p class="testo-bianco" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada ipsum condimentum, congue nisi sit amet, finibus diam. In vestibulum feugiat elit, eu eleifend arcu tincidunt quis.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sezione mappa-->
+      <div class="sezione-mappa container d-flex justify-content-center">
+        <div class="row align-items-center">
+          <!-- Testo-->
+          <div class="col-md-5">
+            <div class="home-text" data-aos="fade-up">
+              <h1 class="testo-giallo">Lorem ipsum</h1>
+              <p class="testo-bianco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada ipsum condimentum, congue nisi sit amet, finibus diam. In vestibulum feugiat elit, eu eleifend arcu tincidunt quis.</p>
+              </div>
+            </div>
+            <!-- Mappa -->
+            <div class="col-md-7 map-box">
+              <div id="map" data-aos="fade-up"></div>
+                <script>
+                  var map = L.map('map').setView([45.46783, 9.18108], 13);
+                  mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+                  L.tileLayer('https://api.mapbox.com/styles/v1/pinodelsole/ckpmw9lrl0dix17pjsxc2gyjx/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicGlub2RlbHNvbGUiLCJhIjoiY2twbW5yYm5uMDdteTJ2bndwOGR3cHVsdCJ9.KtGzPYIYmpXcSxdxrnSzFg', { attribution: 'Map data &copy; '+ mapLink , maxZoom: 24,}).addTo(map);
+                </script>
             </div>
           </div>
-          <!-- Mappa -->
-          <div class="col-md-7 map-box">
-            <div id="map" data-aos="fade-up"></div>
-              <script>
-                var map = L.map('map').setView([45.46783, 9.18108], 13);
-                mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-                L.tileLayer('https://api.mapbox.com/styles/v1/pinodelsole/ckpmw9lrl0dix17pjsxc2gyjx/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicGlub2RlbHNvbGUiLCJhIjoiY2twbW5yYm5uMDdteTJ2bndwOGR3cHVsdCJ9.KtGzPYIYmpXcSxdxrnSzFg', { attribution: 'Map data &copy; '+ mapLink , maxZoom: 24,}).addTo(map);
-              </script>
+        </div>
+
+    </div>
+  </section>
+
+  <!-- Come funziona -->
+  <section id="come-funziona">
+    <div class="container">
+
+      <!-- Come > Utente -->
+      <div class="come-utente row align-items-center justify-content-center">
+        <!-- Testo Utente -->
+        <div class="top-text">
+          <div class="section-title" data-aos="fade-up">
+            <h1 class="testo-blu">I vantaggi per l'utente</h1>
           </div>
         </div>
+
+        <!-- Card Utente -->
+        <div class="row testo-bianco">
+
+          <div class="col-sm-6 col-md-4">
+            <div class="card" data-aos="fade-up">
+              <img src="img/home/intro.png" class="card-img-bottom">
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="card" data-aos="fade-up">
+              <img src="img/home/intro.png" class="card-img-bottom">
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="card" data-aos="fade-up">
+              <img src="img/home/intro.png" class="card-img-bottom">
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+
+
+      <!-- Come > Commerciante -->
+      <div class="come-utente row align-items-center justify-content-center">
+        <!-- Testo Commerciante -->
+        <div class="top-text">
+          <div class="section-title" data-aos="fade-up">
+            <h1 class="testo-blu">I vantaggi per il commerciante</h1>
+          </div>
+        </div>
+
+        <!-- Card Commerciante -->
+        <div class="row testo-bianco">
+
+          <div class="col-sm-6 col-md-4">
+            <div class="card" data-aos="fade-up">
+              <img src="img/home/intro.png" class="card-img-bottom">
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="card" data-aos="fade-up">
+              <img src="img/home/intro.png" class="card-img-bottom">
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="card" data-aos="fade-up">
+              <img src="img/home/intro.png" class="card-img-bottom">
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">Lorem ipsum lorem ipsum lorem ipsum</p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      </div>
+
+      <!-- Come > Screenshot -->
+      <div class="come-utente row align-items-center justify-content-center">
+        <!-- Testo Screenshot -->
+        <div class="top-text">
+          <div class="section-title" data-aos="fade-up">
+            <h1 class="testo-blu">E altre funzioni (screenshot dell'app)</h1>
+          </div>
+        </div>
+
+        <!-- Carosello -->
+        <div class="row container">
+          <div class="owl-carousel screenshot-carousel">
+            <div class="screeshot-item">
+              <img src="img/home/intro.png" class="">
+            </div>
+            <div class="screeshot-item">
+              <img src="img/home/intro.png" class="">
+            </div>
+            <div class="screeshot-item">
+              <img src="img/home/intro.png" class="">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
   </section>
 
 
   <!-- Download -->
-  <section class="download d-flex align-items-center" id="download">
+  <section class="d-flex align-items-center" id="download">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-7">
