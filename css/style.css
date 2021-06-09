@@ -305,7 +305,7 @@ Chi siamo>Mappa
 }
 
 /*--------
-Cosa>utente
+Cosa>utente+commerciante
 ----------*/
 #come-funziona {
   background-color: var(--giallo);
@@ -313,6 +313,10 @@ Cosa>utente
 
 .come-utente {
   min-height: 90vh;
+}
+
+.top-text {
+  margin-top: 5%;
 }
 
 .card {
