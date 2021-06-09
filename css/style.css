@@ -344,6 +344,10 @@ Cosa>screenshot
   min-height: 80vh;
 }
 
+.screenshot-text {
+  margin-bottom: 5%;
+}
+
 .screeshot-item {
   margin: 15px;
 }
