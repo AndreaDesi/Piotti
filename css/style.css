@@ -27,6 +27,7 @@ body {
   max-width: 100% !important;
   min-width: 100% !important;
   overscroll-behavior: contain;
+  align-items: flex-start;
 }
 
 * {
@@ -344,8 +345,9 @@ Cosa>utente+commerciante
 /*--------
 Cosa>screenshot
 ----------*/
-.sezione-screenshot {
-  min-height: 80vh;
+#screenshot {
+  min-height: 100vh;
+  background-color: var(--blu);
 }
 
 .screenshot-text {
@@ -371,6 +373,11 @@ Download
   background-color: var(--giallo);
   overflow-x: hidden;
 }
+
+download-img img {
+  max-width: fit-content;
+  width: 100%;
+  position: relative;
 }
 
 .ios {
@@ -511,5 +518,13 @@ Responsive
 
   .screeshot-item {
     padding: 15%;
+  }
+
+  .download-img img {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 8%;
   }
 }
