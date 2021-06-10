@@ -330,6 +330,8 @@ Cosa>utente+commerciante
 
 .card-img-bottom {
   padding: 15%;
+  align-items: flex-start;
+  height: auto;
 }
 
 .card-text {
@@ -343,7 +345,7 @@ Cosa>utente+commerciante
 }
 
 /*--------
-Cosa>screenshot
+Screenshot
 ----------*/
 #screenshot {
   min-height: 100vh;
