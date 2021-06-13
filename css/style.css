@@ -313,7 +313,7 @@ Cosa>utente+commerciante
 }
 
 .come-utente {
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
 .top-text {
@@ -345,6 +345,10 @@ Cosa>utente+commerciante
   text-align: center;
   font-weight: 700;
   font-size: 45px;
+}
+
+.margine {
+  margin-bottom: 5%;
 }
 
 /*--------
