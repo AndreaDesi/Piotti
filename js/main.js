@@ -14,6 +14,11 @@ $(document).ready(function() {
   });
 });
 
+/*--------  loader  ----------*/
+$(window).on("load",function(){
+     $("#loader").fadeOut(1500);
+});
+
 /*-------- navbar collapse ----------*/
 $(".nav-link").on("click", function() {
   $(".navbar-collapse").collapse("hide")

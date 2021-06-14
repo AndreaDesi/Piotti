@@ -115,6 +115,28 @@ button:focus {
 }
 
 /*--------
+Loader
+----------*/
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--giallo);
+}
+
+#loader img {
+  width: 200px;
+}
+
+#loader img:hover {
+  transform: none;
+}
+
+/*--------
 Navbar
 ----------*/
 .navbar {
