@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 /*--------  loader  ----------*/
 $(window).on("load", function() {
-  $("#loader").fadeOut(2000);
+  $("#loader").fadeOut(1700);
 });
 
 /*-------- navbar collapse ----------*/
