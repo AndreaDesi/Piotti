@@ -15,8 +15,8 @@ $(document).ready(function() {
 });
 
 /*--------  loader  ----------*/
-$(window).on("load",function(){
-     $("#loader").fadeOut(1500);
+$(window).on("load", function() {
+  $("#loader").fadeOut(2000);
 });
 
 /*-------- navbar collapse ----------*/
@@ -30,7 +30,7 @@ $('.screenshot-carousel').owlCarousel({
   margin: 0,
   autoplay: true,
   responsiveClass: true,
-  lazyLoad:true,
+  lazyLoad: true,
   responsive: {
     0: {
       items: 1,
