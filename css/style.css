@@ -175,6 +175,7 @@ Butter fix
 ----------*/
 #butter {
   overflow-x: clip;
+  min-width: 100vw;
 }
 
 /*--------
